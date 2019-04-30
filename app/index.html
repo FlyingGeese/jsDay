@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+  <h1>First National Bank</h1>
+    <section class="screen-grid">
+      <div>
+        <h3>Screen 1</h3>
+        <p id='bank-balance'>0</p>
+        <button onclick='withdrawMoney()'>Withdraw Money</button>
+        <button onclick='depositMoney()'>Deposit Money</button>
+        <p style="font-size: 20px;">
+          Enable OverDraft Protection <input type="checkbox" id="odProtect">
+        </p>
+      </div>
+      <div>
+        <h3>Screen 2</h3>
+        <div id="history"></div>
+      </div>
+    </section>
+    <div class="od-message hidden" id="error-message">
+      <h3>Overdraft Alert</h3>
+      <p>You requested to overdraft funds, but you do not have enough in your balance.</p>
+    </div>
+  <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
